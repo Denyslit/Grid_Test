@@ -1,0 +1,72 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header header" "sidebar content" " footeer footeer";
+  gap: 20px;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 150px 1fr 150px;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-top: 25px;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: header;
+  background-color: thistle;
+}
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+}
+.header_list {
+  display: flex;
+  justify-content: space-between;
+}
+.header_item {
+  margin-right: 25px;
+}
+.iten_link {
+  margin-right: 25px;
+}
+.sidebar {
+  grid-area: sidebar;
+  align-self: start;
+  background-color: turquoise;
+}
+.content {
+  grid-area: content;
+  background-color: wheat;
+}
+.footeer {
+  grid-area: footeer;
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  padding: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 500px);
+}
+.card {
+  background-color: black;
+  height: ;
+}
